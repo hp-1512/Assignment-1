@@ -9,47 +9,55 @@
     <title>Dahsboard</title>
 </head>
 <body>
-    <div class="container">
-        <img src="images/menu-bar.svg" alt=" " class="slidebar">
-        <img src="images/logo.svg" alt=" " class="logo">
+    <div class="container-fluid" id="navbar">
+        <a href=""><img src="images/menu-bar.svg" alt=" " class="slidebar"></a>
+        <a href="dashboard.html"><img src="images/logo.svg" alt=" " class="logo"></a>
         <img src="images/search-icon.svg" alt=" " class="search-icon">
-        <p style="font-size: 20px; font-weight: 500; margin-top: 20px; position: relative;
-        top: 13px; display: inline;">Search</p>
+        <input type="text" name="search" placeholder="Search" style="font-size: 20px; font-weight: 500; position: relative;
+        top: 13px; display: inline; border: 1px white;">
         <img src="images/notification-icon.svg" alt=" " class="notification">
         <img src="images/profile.png" alt=" " class="profile-image">
         <p style="font-size: 15px; font-weight: 200;  top: 18px; display: inline; float: right; position: relative; left: 140px;">John Doe</p>
         <img src="images/select-downward.svg" alt=" " class="downword-arrow">
     </div>
-    <div class="side-bar">
-        <div id="dashboard-active">
-            <img src="images/dashboard-active.svg"  alt=" ">
-            <p>Dashboard</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="side-bar">
+                    <div id="dashboard-logo-active">
+                        <img src="images/dashboard-active.svg"  alt=" ">
+                        <p>Dashboard</p>
+                    </div>
+                    <div id="analysis">
+                        <img src="images/graph-default.svg"  alt=" ">
+                        <p>Analysis</p>
+                    </div>
+                    <div id="inbox">
+                        <img src="images/inbox-default.svg"  alt=" ">
+                        <p>Inbox</p>
+                    </div>
+                    <div id="history">
+                        <img src="images/clock-default.svg"  alt=" ">
+                        <p>History</p>
+                    </div>
+                    <div id="users">
+                        <img src="images/user-default.svg"  alt=" ">
+                        <p>Users</p>
+                    </div>
+                    <div id="maintenance">
+                        <img src="images/maintenance-default.svg"  alt=" ">
+                        <p>Maintenance</p>
+                    </div>
+                    <div id="setting">
+                        <img src="images/setting-default.svg"  alt=" ">
+                        <p>Setting</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="col">
+                <p>lor</p>
+            </div>
         </div>
-        <div id="analysis">
-            <img src="images/graph-default.svg"  alt=" ">
-            <p>Analysis</p>
-        </div>
-        <div id="inbox">
-            <img src="images/inbox-default.svg"  alt=" ">
-            <p>Inbox</p>
-        </div>
-        <div id="history">
-            <img src="images/clock-default.svg"  alt=" ">
-            <p>History</p>
-        </div>
-        <div id="users">
-            <img src="images/user-default.svg"  alt=" ">
-            <p>Users</p>
-        </div>
-        <div id="maintenance">
-            <img src="images/maintenance-default.svg"  alt=" ">
-            <p>Maintenance</p>
-        </div>
-        <div id="setting">
-            <img src="images/setting-default.svg"  alt=" ">
-            <p>Setting</p>
-        </div>
-        
     </div>
 </body>
 </html>
