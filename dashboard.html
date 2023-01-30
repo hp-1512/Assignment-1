@@ -12,14 +12,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="container-fluid" id="navbar" style="padding-right:24px ;">
-                <a href=""><img src="images/menu-bar.svg" alt=" " class="slidebar-icon"></a>
+                <a id="menubar-logo"><img src="images/menu-bar.svg" alt=" " class="slidebar-icon"></a>
                 <a href="dashboard.html"><img src="images/logo.svg" alt=" " class="logo"></a>
                 <img src="images/search-icon.svg" alt=" " class="search-icon">
                 <input type="text" name="search" placeholder="Search" style="font-size: 17px; font-weight: 500; position: relative;
                 top: 13px; display: inline; border: 1px white;">
                 <img src="images/notification-icon.svg" alt=" " class="notification">
                 <img src="images/profile.png" alt=" " class="profile-image">
-                <p style="font-size: 15px; font-weight: 400;  top: 18px; display: inline; float: right; position: relative; left: 0;">John Doe</p>
+                <p id="user">John Doe</p>
                 <img src="images/select-downward.svg" alt=" " class="downword-arrow">
             </div>
         </div>
@@ -27,45 +27,73 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-2">
-                        
-                        <div class="side-bar">
+                        <!-- sidebar layout -->
+                        <div  id="side-bar">
                             <div id="dashboard-logo-active">
-                                <img src="images/dashboard-active.svg"  alt=" ">
-                                <p>Dashboard</p>
+                                <a href="">
+                                    <img src="images/dashboard-active.svg"  alt=" ">
+                                    <p>Dashboard</p>
+                                </a>
                             </div>
                             <div id="analysis">
-                                <img src="images/graph-default.svg"  alt=" ">
-                                <p>Analysis</p>
+                                <a href="">
+                                    <img src="images/graph-default.svg"  alt=" ">
+                                    <p>Analysis</p>
+                                </a>
+                                
                             </div>
                             <div id="inbox">
-                                <img src="images/inbox-default.svg"  alt=" ">
-                                <p>Inbox</p>
+                                <a href="">
+                                    <img src="images/inbox-default.svg"  alt=" ">
+                                    <p>Inbox</p>
+                                </a>
+                                
                             </div>
                             <div id="history">
-                                <img src="images/clock-default.svg"  alt=" ">
-                                <p>History</p>
+                                <a href="">
+                                    <img src="images/clock-default.svg"  alt=" ">
+                                    <p>History</p>
+                                </a>
+                                
                             </div>
                             <div id="users">
-                                <img src="images/user-default.svg"  alt=" ">
-                                <p>Users</p>
+                                <a href="">
+                                    <img src="images/user-default.svg"  alt=" ">
+                                    <p>Users</p>
+                                </a>
+                                
                             </div>
                             <div id="maintenance">
-                                <img src="images/maintenance-default.svg"  alt=" ">
-                                <p>Maintenance</p>
+                                <a href="">
+                                    <img src="images/maintenance-default.svg"  alt=" ">
+                                    <p>Maintenance</p>
+                                </a>
                             </div>
                             <div id="setting">
-                                <img src="images/setting-default.svg"  alt=" ">
-                                <p>Setting</p>
+                                <a href="">
+                                    <img src="images/setting-default.svg"  alt=" ">
+                                    <p>Setting</p>
+                                </a>
                             </div> 
                         </div>
-                        
+                        <script>
+                            const targetDiv = document.getElementById("side-bar");
+                            const btn = document.getElementById("menubar-logo");
+                            btn.onclick = function () {
+                            if (targetDiv.style.display !== "none") {
+                                targetDiv.style.display = "none";
+                            } else {
+                                targetDiv.style.display = "block";
+                            }
+                            };
+                        </script>
                     </div>
                     <div class="col-10">
                         <div class="dashboard-details">
                             <h4 style="margin-left: 1.7em; margin-top:1em">Dashboard</h4>
                             
-                            <div id="first-row-in-dashboard" style="display: flex; margin-left: 1.5em; margin-right: 1.5em;">
-                                <div class="card" style="width: 18rem; margin:1em 1em 2em 1em; border-radius: 5px;border-color: white;">
+                            <div id="first-row-in-dashboard">
+                                <div class="card">
                                     <div class="card-body" style="display: flex;">
                                         <img src="images/star.svg" alt="">
                                         <div>
@@ -76,7 +104,7 @@
                                     </div>
                                   </div>
 
-                                  <div class="card" style="width: 18rem;margin: 1em 1em 2em 1em;border-radius: 5px;border-color: white;">
+                                  <div class="card">
                                     <div class="card-body" style="display: flex;">
                                         <img src="images/new-product.svg" alt="">
                                         <div>
@@ -86,7 +114,7 @@
                                     </div>
                                   </div>
 
-                                  <div class="card" style="width: 18rem;margin: 1em 1em 2em 1em;border-radius: 5px;border-color: white;">
+                                  <div class="card">
                                     <div class="card-body" style="display: flex;">
                                         <img src="images/total-product.svg" alt="" style="height: 58px; width:58px;">
                                         <div>
@@ -96,7 +124,7 @@
                                     </div>
                                   </div>
 
-                                  <div class="card" style="width: 18rem;margin: 1em 1em 2em 1em;border-radius: 5px;border-color: white;">
+                                  <div class="card">
                                     <div class="card-body" style="display: flex;">
                                         <img src="images/dollar-filled.svg" alt="">
                                         <div>
@@ -106,7 +134,7 @@
                                     </div>
                                   </div>
 
-                                  <div class="card" style="width: 18rem;margin: 1em 1em 2em 1em;border-radius: 5px; border-color: white;">
+                                  <div class="card">
                                     <div class="card-body" style="display: flex;">
                                         <img src="images/money-bag.svg" alt="">
                                         <div>
@@ -120,7 +148,7 @@
 
                             <div class="row" style="margin-left:2.5em; " >
                                 <div class="sales-row" style="display: flex;">
-                                    <div class="sales-by-time" style="padding: 2em;">
+                                    <div class="sales-by-time">
                                         <div id="sale-by-time-header">
                                             <h6>Sale</h6>
                                             <ul>
@@ -131,7 +159,7 @@
                                         </div>
                                         <img src="images/data-graph.png" alt="" >
                                     </div>
-                                    <div class="sales-by-country" style="background-color:white;margin-left: 2em; max-width: 100%; padding: 2em 1em 1em 1em;">
+                                    <div class="sales-by-country">
                                         <div id="sale-by-country-header">
                                             <h6>Sales by Country</h6>
                                         </div>
