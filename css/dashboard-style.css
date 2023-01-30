@@ -60,7 +60,7 @@ body{
     top: 19px;
     left:6.5%;
 }
-#dashboard-logo-active>img{
+#dashboard-logo-active>a>img{
     width: 25px;
     height: 25px;
     margin-left: 19px;
@@ -75,7 +75,7 @@ body{
     background: rgb(255 239 239);
     border-radius: 5px;
 }
-#dashboard-logo-active>p{
+#dashboard-logo-active>a>p{
     display: inline-block;
     color: #C8242F;
     margin-left: 10px;
@@ -84,77 +84,99 @@ body{
     margin-bottom: 10px;
 }
 
-#analysis>img{
+#analysis>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#analysis>p{
+#analysis>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
 
-#inbox>img{
+#inbox>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#inbox>p{
+#inbox>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
 
-#history>img{
+#history>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#history>p{
+#history>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
 
-#users>img{
+#users>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#users>p{
+#users>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
 
-#maintenance>img{
+#maintenance>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#maintenance>p{
+#maintenance>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
 
-#setting>img{
+#setting>a>img{
     width: 25px;
     height: 25px;
     margin-left: 45px;
 }
-#setting>p{
+#setting>a>p{
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 10px;
+    color: black;
 }
+#user{
+    font-size: 0.9375em; 
+    font-weight: 400;  
+    top: 18px; 
+    display: inline; 
+    float: right; 
+    position: relative; 
+    left: 0;
+}
+
+#first-row-in-dashboard{
+    display: flex; 
+    margin-left: 1.5em; 
+    margin-right: 1.5em;
+}
+/* dashboard-part*/
 
 /* for pie chart */
 #legenda {
@@ -243,3 +265,23 @@ li{
     border-bottom-width: 2.8px;
     width: fit-content;
 }
+
+.sales-by-country{
+    background-color:white;
+    margin-left: 2em; 
+    max-width: 100%; 
+    padding: 2em 1em 1em 1em;
+}
+.sales-by-time{
+    padding: 2em;
+}
+
+.card{
+    width: 18rem; margin:1em 1em 2em 1em; border-radius: 5px;border-color: white;
+}
+
+
+
+
+
+ 
