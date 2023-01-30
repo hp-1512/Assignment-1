@@ -10,12 +10,14 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <img class="hero-image" src="images/hero-image.png" alt="">
+        <div class="row" >
+            <div class="col-xl-6" id="hero-image-part">
+                <div style="max-height: 36em; max-width: 36em; margin: 12px 57.6px 0 57.6px; padding-left: 2%;">
+                    <img class="hero-image" src="images/hero-image.png" alt="">
+                </div>
             </div>
             
-            <div class="col">
+            <div class="col-xl-6" id="login-details">
                 <div class="container" id="login-tab">
                     <img id="logo" src="images/header-logo.svg" alt="">
                     <h1 id="heading">We are <span style="color:#C8242F; font-weight:900; line-height: 53px;">experts</span> in business, marketing, growth, & sales.</h1>
@@ -23,11 +25,12 @@
                     
                     <input type="text" id="username" name="username" placeholder="Username"><br>
                     <input type="password" id="pwd" name="pwd" placeholder="Password"><br>
-                    <button name="button" style="border-radius: 23px;">Login</button>
-
-                    <a href="" id="forgot-password-link">Forgot Password?</a>
+                    <div class="login-forgot-btns">
+                        <button name="button" type="submit" style="border-radius: 23px;">Login</button>
+                        <a href="" id="forgot-password-link">Forgot Password?</a>
+                    </div>
                     <br>
-                    <p style="color:#ADADAD; font-weight: 450; margin-top: 12px;">Are you a new Member?<a href="" id="registration-page-link">Register here</a></p>
+                    <p><span id="member-registration"> Are you a new Member?</span><a href="" id="registration-page-link">Register here</a></p>
                 </div>
             </div>
         </div>
